@@ -63,6 +63,7 @@
             this.dataGridViewTextBoxColumn7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.label10 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.database23DataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.studentBindingSource)).BeginInit();
@@ -71,6 +72,7 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.label10);
             this.groupBox1.Controls.Add(this.comboBox2);
             this.groupBox1.Controls.Add(this.comboBox1);
             this.groupBox1.Controls.Add(this.button_add);
@@ -94,7 +96,7 @@
             this.groupBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.groupBox1.Size = new System.Drawing.Size(320, 478);
+            this.groupBox1.Size = new System.Drawing.Size(381, 478);
             this.groupBox1.TabIndex = 5;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Add_Student";
@@ -106,7 +108,7 @@
             "Software",
             "Civil",
             "Electricity"});
-            this.comboBox2.Location = new System.Drawing.Point(112, 407);
+            this.comboBox2.Location = new System.Drawing.Point(116, 409);
             this.comboBox2.Margin = new System.Windows.Forms.Padding(4);
             this.comboBox2.Name = "comboBox2";
             this.comboBox2.Size = new System.Drawing.Size(160, 24);
@@ -118,7 +120,7 @@
             this.comboBox1.Items.AddRange(new object[] {
             "male ",
             "female"});
-            this.comboBox1.Location = new System.Drawing.Point(112, 366);
+            this.comboBox1.Location = new System.Drawing.Point(116, 368);
             this.comboBox1.Margin = new System.Windows.Forms.Padding(4);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(160, 24);
@@ -127,7 +129,7 @@
             // button_add
             // 
             this.button_add.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button_add.Location = new System.Drawing.Point(196, 448);
+            this.button_add.Location = new System.Drawing.Point(200, 450);
             this.button_add.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button_add.Name = "button_add";
             this.button_add.Size = new System.Drawing.Size(75, 23);
@@ -140,7 +142,7 @@
             // 
             this.dateTimePicker1.CustomFormat = "dd-MM-yy";
             this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dateTimePicker1.Location = new System.Drawing.Point(113, 329);
+            this.dateTimePicker1.Location = new System.Drawing.Point(117, 331);
             this.dateTimePicker1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(95, 22);
@@ -149,7 +151,7 @@
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(19, 329);
+            this.label9.Location = new System.Drawing.Point(23, 331);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(62, 17);
             this.label9.TabIndex = 18;
@@ -158,7 +160,7 @@
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(-3, 402);
+            this.label8.Location = new System.Drawing.Point(23, 412);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(82, 17);
             this.label8.TabIndex = 16;
@@ -167,7 +169,7 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(9, 366);
+            this.label7.Location = new System.Drawing.Point(32, 375);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(53, 17);
             this.label7.TabIndex = 15;
@@ -176,7 +178,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(19, 87);
+            this.label6.Location = new System.Drawing.Point(23, 89);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(76, 17);
             this.label6.TabIndex = 14;
@@ -185,7 +187,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(19, 142);
+            this.label5.Location = new System.Drawing.Point(23, 144);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(76, 17);
             this.label5.TabIndex = 13;
@@ -194,7 +196,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(19, 194);
+            this.label4.Location = new System.Drawing.Point(23, 196);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(75, 17);
             this.label4.TabIndex = 12;
@@ -203,7 +205,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(20, 290);
+            this.label3.Location = new System.Drawing.Point(24, 289);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(42, 17);
             this.label3.TabIndex = 11;
@@ -212,7 +214,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(19, 241);
+            this.label2.Location = new System.Drawing.Point(23, 243);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(68, 17);
             this.label2.TabIndex = 10;
@@ -220,7 +222,7 @@
             // 
             // textBox_fn
             // 
-            this.textBox_fn.Location = new System.Drawing.Point(113, 87);
+            this.textBox_fn.Location = new System.Drawing.Point(117, 89);
             this.textBox_fn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBox_fn.Name = "textBox_fn";
             this.textBox_fn.Size = new System.Drawing.Size(159, 22);
@@ -228,15 +230,15 @@
             // 
             // textBox_ln
             // 
-            this.textBox_ln.Location = new System.Drawing.Point(113, 138);
+            this.textBox_ln.Location = new System.Drawing.Point(117, 140);
             this.textBox_ln.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBox_ln.Name = "textBox_ln";
-            this.textBox_ln.Size = new System.Drawing.Size(159, 22);
+            this.textBox_ln.Size = new System.Drawing.Size(158, 22);
             this.textBox_ln.TabIndex = 8;
             // 
             // textBox_mail
             // 
-            this.textBox_mail.Location = new System.Drawing.Point(113, 287);
+            this.textBox_mail.Location = new System.Drawing.Point(117, 289);
             this.textBox_mail.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBox_mail.Name = "textBox_mail";
             this.textBox_mail.Size = new System.Drawing.Size(159, 22);
@@ -244,7 +246,7 @@
             // 
             // textBox_pw
             // 
-            this.textBox_pw.Location = new System.Drawing.Point(113, 236);
+            this.textBox_pw.Location = new System.Drawing.Point(117, 238);
             this.textBox_pw.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBox_pw.Name = "textBox_pw";
             this.textBox_pw.Size = new System.Drawing.Size(159, 22);
@@ -252,7 +254,7 @@
             // 
             // textBox_un
             // 
-            this.textBox_un.Location = new System.Drawing.Point(113, 192);
+            this.textBox_un.Location = new System.Drawing.Point(116, 196);
             this.textBox_un.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBox_un.Name = "textBox_un";
             this.textBox_un.Size = new System.Drawing.Size(159, 22);
@@ -261,7 +263,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(20, 41);
+            this.label1.Location = new System.Drawing.Point(24, 43);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(21, 17);
             this.label1.TabIndex = 3;
@@ -269,7 +271,7 @@
             // 
             // textBox_ID
             // 
-            this.textBox_ID.Location = new System.Drawing.Point(113, 38);
+            this.textBox_ID.Location = new System.Drawing.Point(117, 40);
             this.textBox_ID.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBox_ID.Name = "textBox_ID";
             this.textBox_ID.Size = new System.Drawing.Size(159, 22);
@@ -318,10 +320,10 @@
             this.dataGridViewTextBoxColumn8,
             this.dataGridViewTextBoxColumn9});
             this.studentDataGridView.DataSource = this.studentBindingSource;
-            this.studentDataGridView.Location = new System.Drawing.Point(374, 76);
+            this.studentDataGridView.Location = new System.Drawing.Point(507, 76);
             this.studentDataGridView.Name = "studentDataGridView";
             this.studentDataGridView.RowTemplate.Height = 24;
-            this.studentDataGridView.Size = new System.Drawing.Size(846, 350);
+            this.studentDataGridView.Size = new System.Drawing.Size(713, 350);
             this.studentDataGridView.TabIndex = 6;
             // 
             // dataGridViewTextBoxColumn1
@@ -378,6 +380,14 @@
             this.dataGridViewTextBoxColumn9.HeaderText = "departmentName";
             this.dataGridViewTextBoxColumn9.Name = "dataGridViewTextBoxColumn9";
             // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(281, 199);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(0, 17);
+            this.label10.TabIndex = 20;
+            // 
             // Add_student
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -433,5 +443,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn7;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn8;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn9;
+        private System.Windows.Forms.Label label10;
     }
 }

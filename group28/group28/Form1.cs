@@ -31,11 +31,8 @@ Persist Security Info=False;";
             ManagerZone man = new ManagerZone();
             StudentZone stu = new StudentZone();
             LecturerZone lec = new LecturerZone();
-            // string userstudent = string.Format("SELECT username FROM student WHERE username='" + username_text.Text + "'");
-            //string userlecturer = string.Format("SELECT * FROM lecturer where username='" + username_text.Text + "'");
-            // string usermanager = string.Format("SELECT * FROM Manager where username='" + username_text.Text + "'");
             string user = string.Format(username_text.Text);
-            //string c = userstudent.Substring(0, 1);
+
             if (user[0] == 's')
             {
                 connection.Open();
@@ -52,7 +49,6 @@ Persist Security Info=False;";
                 {
                     this.Hide();
                     stu.Show();
-                    //  MessageBox.Show("Correct");
                 }
                 if (count > 1)
                 {
@@ -80,7 +76,6 @@ Persist Security Info=False;";
                 {
                     this.Hide();
                     man.Show();
-                    //  MessageBox.Show("Correct");
                 }
                 if (count > 1)
                 {
@@ -108,7 +103,6 @@ Persist Security Info=False;";
                 {
                     this.Hide();
                     lec.Show();
-                    //  MessageBox.Show("Correct");
                 }
                 if (count > 1)
                 {

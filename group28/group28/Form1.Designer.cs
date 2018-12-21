@@ -29,12 +29,12 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.label1 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.Login_button = new System.Windows.Forms.Button();
             this.username_text = new System.Windows.Forms.TextBox();
             this.password_text = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.stuzone = new System.Windows.Forms.Button();
             this.manzone = new System.Windows.Forms.Button();
             this.leczone = new System.Windows.Forms.Button();
@@ -54,16 +54,6 @@
             this.groupBox1.TabIndex = 14;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Login";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(12, 12);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(46, 17);
-            this.label1.TabIndex = 14;
-            this.label1.Text = "label1";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // label3
             // 
@@ -98,7 +88,7 @@
             // 
             // password_text
             // 
-            this.password_text.Location = new System.Drawing.Point(129, 70);
+            this.password_text.Location = new System.Drawing.Point(133, 74);
             this.password_text.Margin = new System.Windows.Forms.Padding(4);
             this.password_text.Name = "password_text";
             this.password_text.PasswordChar = '•';
@@ -116,6 +106,16 @@
             this.label2.Size = new System.Drawing.Size(104, 22);
             this.label2.TabIndex = 10;
             this.label2.Text = "Username:";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(12, 12);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(46, 17);
+            this.label1.TabIndex = 14;
+            this.label1.Text = "label1";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // stuzone
             // 
