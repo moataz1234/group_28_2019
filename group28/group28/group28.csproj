@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Add_course.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Add_course.Designer.cs">
+      <DependentUpon>Add_course.cs</DependentUpon>
+    </Compile>
     <Compile Include="Add_student.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -56,6 +62,12 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Database23DataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="delete_course.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="delete_course.Designer.cs">
+      <DependentUpon>delete_course.cs</DependentUpon>
     </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
@@ -74,6 +86,12 @@
     </Compile>
     <Compile Include="ManagerZone.Designer.cs">
       <DependentUpon>ManagerZone.cs</DependentUpon>
+    </Compile>
+    <Compile Include="manager_send_message.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="manager_send_message.Designer.cs">
+      <DependentUpon>manager_send_message.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -101,8 +119,20 @@
     <Compile Include="StudentZone.Designer.cs">
       <DependentUpon>StudentZone.cs</DependentUpon>
     </Compile>
+    <Compile Include="update2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="update2.Designer.cs">
+      <DependentUpon>update2.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Add_course.resx">
+      <DependentUpon>Add_course.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Add_student.resx">
       <DependentUpon>Add_student.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="delete_course.resx">
+      <DependentUpon>delete_course.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
@@ -112,6 +142,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ManagerZone.resx">
       <DependentUpon>ManagerZone.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="manager_send_message.resx">
+      <DependentUpon>manager_send_message.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -133,6 +166,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="StudentZone.resx">
       <DependentUpon>StudentZone.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="update2.resx">
+      <DependentUpon>update2.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Database23DataSet.xsc">
       <DependentUpon>Database23DataSet.xsd</DependentUpon>

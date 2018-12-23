@@ -43,7 +43,28 @@ namespace group28
 
         private void button9_Click(object sender, EventArgs e)
         {
+            //  Update_course upcrs = new Update_course();
+            // upcrs.Show();
+            update2 up = new update2();
+            up.Show();
+        }
 
+        private void button8_Click(object sender, EventArgs e)
+        {
+            Add_course adcrs = new Add_course();
+            adcrs.Show();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            delete_course dlcrs = new delete_course();
+            dlcrs.Show();
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            manager_send_message mmn = new manager_send_message();
+            mmn.Show();
         }
     }
 }

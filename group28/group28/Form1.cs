@@ -32,8 +32,12 @@ Persist Security Info=False;";
             StudentZone stu = new StudentZone();
             LecturerZone lec = new LecturerZone();
             string user = string.Format(username_text.Text);
-
-            if (user[0] == 's')
+            string pass = string.Format(password_text.Text);
+            if (user == "" || pass == "") {
+                MessageBox.Show("you must enter username and pass to login");
+            }
+            //string id = string.Format("select ID from student,lecturer,Manager where ");
+            else if (user[0] == 's')
             {
                 connection.Open();
                 OleDbCommand command = new OleDbCommand();
@@ -60,7 +64,7 @@ Persist Security Info=False;";
                 }
                 connection.Close();
             }
-            if (user[0] == 'm')
+           else if (user[0] == 'm')
             {
                 connection.Open();
                 OleDbCommand command = new OleDbCommand();
@@ -87,7 +91,7 @@ Persist Security Info=False;";
                 }
                 connection.Close();
             }
-            if (user[0] == 'l')
+            else if (user[0] == 'l')
             {
                 connection.Open();
                 OleDbCommand command = new OleDbCommand();
@@ -140,6 +144,10 @@ Persist Security Info=False;";
         {
             LecturerZone lecc = new LecturerZone();
             lecc.Show();
+        }
+        public string Get_id(string id)
+        {
+            return id;
         }
     }
 }

@@ -37,6 +37,7 @@ namespace group28
             DataView dv = new DataView();
             dv.Table = database23DataSet.Tables[6];
             dv.RowFilter = "ID  = " + textB_id.Text;
+           // dv.RowFilter = "departmentName  = " + "software";
             studentDataGridView.DataSource = dv;
         }
     }
