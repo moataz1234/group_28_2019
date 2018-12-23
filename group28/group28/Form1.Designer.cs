@@ -48,31 +48,32 @@
             this.groupBox1.Controls.Add(this.username_text);
             this.groupBox1.Controls.Add(this.password_text);
             this.groupBox1.Controls.Add(this.label2);
-            this.groupBox1.Location = new System.Drawing.Point(162, 103);
+            this.groupBox1.Location = new System.Drawing.Point(122, 84);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(541, 198);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox1.Size = new System.Drawing.Size(406, 161);
             this.groupBox1.TabIndex = 14;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Login";
+            this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Modern No. 20", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(21, 72);
-            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label3.Location = new System.Drawing.Point(16, 58);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(100, 22);
+            this.label3.Size = new System.Drawing.Size(81, 18);
             this.label3.TabIndex = 11;
             this.label3.Text = "Password:";
             // 
             // Login_button
             // 
             this.Login_button.Font = new System.Drawing.Font("Segoe UI Historic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Login_button.Location = new System.Drawing.Point(392, 129);
-            this.Login_button.Margin = new System.Windows.Forms.Padding(4);
+            this.Login_button.Location = new System.Drawing.Point(294, 105);
             this.Login_button.Name = "Login_button";
-            this.Login_button.Size = new System.Drawing.Size(133, 49);
+            this.Login_button.Size = new System.Drawing.Size(100, 40);
             this.Login_button.TabIndex = 12;
             this.Login_button.Text = "LOGIN";
             this.Login_button.UseVisualStyleBackColor = true;
@@ -80,19 +81,17 @@
             // 
             // username_text
             // 
-            this.username_text.Location = new System.Drawing.Point(133, 40);
-            this.username_text.Margin = new System.Windows.Forms.Padding(4);
+            this.username_text.Location = new System.Drawing.Point(100, 32);
             this.username_text.Name = "username_text";
-            this.username_text.Size = new System.Drawing.Size(227, 22);
+            this.username_text.Size = new System.Drawing.Size(171, 20);
             this.username_text.TabIndex = 9;
             // 
             // password_text
             // 
-            this.password_text.Location = new System.Drawing.Point(133, 74);
-            this.password_text.Margin = new System.Windows.Forms.Padding(4);
+            this.password_text.Location = new System.Drawing.Point(100, 60);
             this.password_text.Name = "password_text";
             this.password_text.PasswordChar = '•';
-            this.password_text.Size = new System.Drawing.Size(227, 22);
+            this.password_text.Size = new System.Drawing.Size(171, 20);
             this.password_text.TabIndex = 8;
             // 
             // label2
@@ -100,19 +99,19 @@
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Beige;
             this.label2.Font = new System.Drawing.Font("Modern No. 20", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(21, 40);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.Location = new System.Drawing.Point(16, 32);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(104, 22);
+            this.label2.Size = new System.Drawing.Size(84, 18);
             this.label2.TabIndex = 10;
             this.label2.Text = "Username:";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(12, 12);
+            this.label1.Location = new System.Drawing.Point(9, 10);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(46, 17);
+            this.label1.Size = new System.Drawing.Size(35, 13);
             this.label1.TabIndex = 14;
             this.label1.Text = "label1";
             this.label1.Click += new System.EventHandler(this.label1_Click);
@@ -123,12 +122,14 @@
             this.stuzone.Font = new System.Drawing.Font("Baskerville Old Face", 15F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.stuzone.ForeColor = System.Drawing.Color.Green;
             this.stuzone.ImageKey = "(none)";
-            this.stuzone.Location = new System.Drawing.Point(326, 12);
+            this.stuzone.Location = new System.Drawing.Point(244, 10);
+            this.stuzone.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.stuzone.Name = "stuzone";
-            this.stuzone.Size = new System.Drawing.Size(137, 37);
+            this.stuzone.Size = new System.Drawing.Size(103, 30);
             this.stuzone.TabIndex = 17;
             this.stuzone.Text = "Student Zone";
             this.stuzone.UseVisualStyleBackColor = false;
+            this.stuzone.Click += new System.EventHandler(this.stuzone_Click);
             // 
             // manzone
             // 
@@ -136,9 +137,10 @@
             this.manzone.Font = new System.Drawing.Font("Baskerville Old Face", 15F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.manzone.ForeColor = System.Drawing.Color.Green;
             this.manzone.ImageKey = "(none)";
-            this.manzone.Location = new System.Drawing.Point(612, 12);
+            this.manzone.Location = new System.Drawing.Point(459, 10);
+            this.manzone.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.manzone.Name = "manzone";
-            this.manzone.Size = new System.Drawing.Size(137, 37);
+            this.manzone.Size = new System.Drawing.Size(103, 30);
             this.manzone.TabIndex = 16;
             this.manzone.Text = "Manager Zone";
             this.manzone.UseVisualStyleBackColor = false;
@@ -150,9 +152,10 @@
             this.leczone.Font = new System.Drawing.Font("Baskerville Old Face", 15F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.leczone.ForeColor = System.Drawing.Color.Green;
             this.leczone.ImageKey = "(none)";
-            this.leczone.Location = new System.Drawing.Point(469, 12);
+            this.leczone.Location = new System.Drawing.Point(352, 10);
+            this.leczone.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.leczone.Name = "leczone";
-            this.leczone.Size = new System.Drawing.Size(137, 37);
+            this.leczone.Size = new System.Drawing.Size(103, 30);
             this.leczone.TabIndex = 15;
             this.leczone.Text = "Lecturer Zone";
             this.leczone.UseVisualStyleBackColor = false;
@@ -160,15 +163,16 @@
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Beige;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(600, 366);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.stuzone);
             this.Controls.Add(this.manzone);
             this.Controls.Add(this.leczone);
             this.Controls.Add(this.groupBox1);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);

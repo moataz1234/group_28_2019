@@ -39,5 +39,11 @@ namespace group28
             dv.RowFilter = "ID  = " + textB_id_lec.Text;
             lecturerDataGridView.DataSource = dv;
         }
+       // public StudentZone s4 = new StudentZone();
+      //  public ManagerZone s3 = new ManagerZone();
+        private void button1_Click(object sender, EventArgs e)
+        {
+            
+        }
     }
 }

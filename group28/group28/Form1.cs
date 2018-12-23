@@ -16,8 +16,13 @@ namespace group28
         private OleDbConnection connection = new OleDbConnection();
         public Form1()
         {
+            username_text.Focus();
             InitializeComponent();
+            /*
             connection.ConnectionString = @"Provider=Microsoft.Jet.OLEDB.4.0;Data Source=C:\Users\mtzat\Desktop\Database23.mdb;
+Persist Security Info=False;";
+    */
+            connection.ConnectionString = @"Provider=Microsoft.Jet.OLEDB.4.0;Data Source=|DataDirectory|\\Database23.mdb;
 Persist Security Info=False;";
         }
 
@@ -25,9 +30,10 @@ Persist Security Info=False;";
         {
 
         }
-
+        
         private void Login_button_Click(object sender, EventArgs e)
         {
+            username_text.Focus();
             ManagerZone man = new ManagerZone();
             StudentZone stu = new StudentZone();
             LecturerZone lec = new LecturerZone();
@@ -140,6 +146,17 @@ Persist Security Info=False;";
         {
             LecturerZone lecc = new LecturerZone();
             lecc.Show();
+        }
+
+        private void groupBox1_Enter(object sender, EventArgs e)
+        {
+
+        }
+        public StudentZone s2 = new StudentZone();
+        private void stuzone_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            s2.Show();
         }
     }
 }

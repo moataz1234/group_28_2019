@@ -16,5 +16,14 @@ namespace group28
         {
             InitializeComponent();
         }
+
+        public Search_lecturer s1 = new Search_lecturer();
+
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            s1.Show();            
+        }
     }
 }
