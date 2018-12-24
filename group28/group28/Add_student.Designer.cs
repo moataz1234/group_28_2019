@@ -30,6 +30,7 @@
         {
             this.components = new System.ComponentModel.Container();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.label10 = new System.Windows.Forms.Label();
             this.comboBox2 = new System.Windows.Forms.ComboBox();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.button_add = new System.Windows.Forms.Button();
@@ -63,7 +64,6 @@
             this.dataGridViewTextBoxColumn7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.label10 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.database23DataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.studentBindingSource)).BeginInit();
@@ -101,6 +101,14 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Add_Student";
             // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(281, 199);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(0, 17);
+            this.label10.TabIndex = 20;
+            // 
             // comboBox2
             // 
             this.comboBox2.FormattingEnabled = true;
@@ -129,7 +137,7 @@
             // button_add
             // 
             this.button_add.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button_add.Location = new System.Drawing.Point(200, 450);
+            this.button_add.Location = new System.Drawing.Point(300, 441);
             this.button_add.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button_add.Name = "button_add";
             this.button_add.Size = new System.Drawing.Size(75, 23);
@@ -379,14 +387,6 @@
             this.dataGridViewTextBoxColumn9.DataPropertyName = "departmentName";
             this.dataGridViewTextBoxColumn9.HeaderText = "departmentName";
             this.dataGridViewTextBoxColumn9.Name = "dataGridViewTextBoxColumn9";
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(281, 199);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(0, 17);
-            this.label10.TabIndex = 20;
             // 
             // Add_student
             // 

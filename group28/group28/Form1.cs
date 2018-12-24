@@ -13,7 +13,8 @@ namespace group28
 {
     public partial class Form1 : Form
     {
-        private OleDbConnection connection = new OleDbConnection();
+        public OleDbConnection connection = new OleDbConnection();
+
         public Form1()
         {
             InitializeComponent();
@@ -117,6 +118,23 @@ Persist Security Info=False;";
                     MessageBox.Show("Incorrect");
                 }
                 connection.Close();
+                //if (count == 1)
+                //{
+                //    try
+                //    {
+                //        connection.Open();
+                //        OleDbCommand cmd = new OleDbCommand();
+                //        cmd.Connection = connection;
+                //        cmd.CommandText = "select ID from student where sutdent.username=user";
+                //        cmd.ExecuteNonQuery();
+                //        MessageBox.Show("Data saved!");
+                //        connection.Close();
+                //    }
+                //    catch (Exception ex)
+                //    {
+                //        MessageBox.Show("Error " + ex);
+                //    }
+                //}
             }
         }
 
@@ -149,5 +167,29 @@ Persist Security Info=False;";
         {
             return id;
         }
+        //public DataSet GetDataSet(string SqlStr)
+        //{
+        //    try
+        //    {
+        //        OleDbCommand cmd = new OleDbCommand();
+        //        DataSet ds = new DataSet();
+        //        cmd.CommandText = SqlStr;
+        //        cmd.Connection = connection;
+        //        OleDbDataAdapter da = new OleDbDataAdapter(cmd);
+        //        da.Fill(ds);
+        //        dataGridView1.DataSource = ds;
+        //        return ds;
+        //    }
+        //    catch (Exception)
+        //    {
+
+        //        throw;
+        //    }
+        //}
+        //public DataSet Getid()
+        //{
+        //    string str = string.Format("SELECT ID FROM student ");
+        //    return GetDataSet(str);
+        //}
     }
 }

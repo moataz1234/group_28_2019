@@ -34,10 +34,19 @@ namespace group28
 
         private void btn_search_lecc_Click(object sender, EventArgs e)
         {
-            DataView dv = new DataView();
-            dv.Table = database23DataSet.Tables[2];
-            dv.RowFilter = "ID  = " + textB_id_lec.Text;
-            lecturerDataGridView.DataSource = dv;
+            string id = string.Format(textB_id_lec.Text);
+
+            if (id == "")
+            {
+                MessageBox.Show("You Must Insert an id lecturer!");
+            }
+            else
+            {
+                DataView dv = new DataView();
+                dv.Table = database23DataSet.Tables[2];
+                dv.RowFilter = "ID  = " + textB_id_lec.Text;
+                lecturerDataGridView.DataSource = dv;
+            }
         }
     }
 }

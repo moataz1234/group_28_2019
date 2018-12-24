@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.label3 = new System.Windows.Forms.Label();
             this.Login_button = new System.Windows.Forms.Button();
@@ -38,7 +39,14 @@
             this.stuzone = new System.Windows.Forms.Button();
             this.manzone = new System.Windows.Forms.Button();
             this.leczone = new System.Windows.Forms.Button();
+            this.label_title = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox1
@@ -46,11 +54,12 @@
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.Login_button);
             this.groupBox1.Controls.Add(this.username_text);
+            this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Controls.Add(this.password_text);
             this.groupBox1.Controls.Add(this.label2);
-            this.groupBox1.Location = new System.Drawing.Point(162, 103);
+            this.groupBox1.Location = new System.Drawing.Point(293, 95);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(541, 198);
+            this.groupBox1.Size = new System.Drawing.Size(395, 198);
             this.groupBox1.TabIndex = 14;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Login";
@@ -68,14 +77,20 @@
             // 
             // Login_button
             // 
+            this.Login_button.BackColor = System.Drawing.Color.FloralWhite;
+            this.Login_button.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Login_button.BackgroundImage")));
+            this.Login_button.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Login_button.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Login_button.Font = new System.Drawing.Font("Segoe UI Historic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Login_button.Location = new System.Drawing.Point(361, 129);
+            this.Login_button.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.Login_button.Location = new System.Drawing.Point(237, 132);
             this.Login_button.Margin = new System.Windows.Forms.Padding(4);
             this.Login_button.Name = "Login_button";
-            this.Login_button.Size = new System.Drawing.Size(133, 49);
+            this.Login_button.Size = new System.Drawing.Size(123, 49);
             this.Login_button.TabIndex = 12;
             this.Login_button.Text = "LOGIN";
-            this.Login_button.UseVisualStyleBackColor = true;
+            this.Login_button.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.Login_button.UseVisualStyleBackColor = false;
             this.Login_button.Click += new System.EventHandler(this.Login_button_Click);
             // 
             // username_text
@@ -110,7 +125,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(12, 12);
+            this.label1.Location = new System.Drawing.Point(6, 164);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(46, 17);
             this.label1.TabIndex = 14;
@@ -123,7 +138,7 @@
             this.stuzone.Font = new System.Drawing.Font("Baskerville Old Face", 15F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.stuzone.ForeColor = System.Drawing.Color.Green;
             this.stuzone.ImageKey = "(none)";
-            this.stuzone.Location = new System.Drawing.Point(326, 12);
+            this.stuzone.Location = new System.Drawing.Point(194, 370);
             this.stuzone.Name = "stuzone";
             this.stuzone.Size = new System.Drawing.Size(137, 37);
             this.stuzone.TabIndex = 17;
@@ -136,7 +151,7 @@
             this.manzone.Font = new System.Drawing.Font("Baskerville Old Face", 15F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.manzone.ForeColor = System.Drawing.Color.Green;
             this.manzone.ImageKey = "(none)";
-            this.manzone.Location = new System.Drawing.Point(612, 12);
+            this.manzone.Location = new System.Drawing.Point(480, 370);
             this.manzone.Name = "manzone";
             this.manzone.Size = new System.Drawing.Size(137, 37);
             this.manzone.TabIndex = 16;
@@ -150,7 +165,7 @@
             this.leczone.Font = new System.Drawing.Font("Baskerville Old Face", 15F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.leczone.ForeColor = System.Drawing.Color.Green;
             this.leczone.ImageKey = "(none)";
-            this.leczone.Location = new System.Drawing.Point(469, 12);
+            this.leczone.Location = new System.Drawing.Point(337, 370);
             this.leczone.Name = "leczone";
             this.leczone.Size = new System.Drawing.Size(137, 37);
             this.leczone.TabIndex = 15;
@@ -158,22 +173,71 @@
             this.leczone.UseVisualStyleBackColor = false;
             this.leczone.Click += new System.EventHandler(this.leczone_Click);
             // 
+            // label_title
+            // 
+            this.label_title.AutoSize = true;
+            this.label_title.BackColor = System.Drawing.Color.Khaki;
+            this.label_title.Font = new System.Drawing.Font("Yu Gothic UI Semibold", 24F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_title.ForeColor = System.Drawing.Color.Green;
+            this.label_title.Location = new System.Drawing.Point(300, 9);
+            this.label_title.Name = "label_title";
+            this.label_title.Size = new System.Drawing.Size(188, 54);
+            this.label_title.TabIndex = 18;
+            this.label_title.Text = "SUCCESS";
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(494, 9);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(59, 54);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 19;
+            this.pictureBox1.TabStop = false;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+            this.pictureBox2.Location = new System.Drawing.Point(235, 9);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(59, 54);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 20;
+            this.pictureBox2.TabStop = false;
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
+            this.pictureBox3.Location = new System.Drawing.Point(74, 95);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(192, 198);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox3.TabIndex = 21;
+            this.pictureBox3.TabStop = false;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Beige;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.pictureBox3);
+            this.Controls.Add(this.pictureBox2);
+            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.label_title);
             this.Controls.Add(this.stuzone);
             this.Controls.Add(this.manzone);
             this.Controls.Add(this.leczone);
             this.Controls.Add(this.groupBox1);
+            this.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -191,6 +255,10 @@
         private System.Windows.Forms.Button stuzone;
         private System.Windows.Forms.Button manzone;
         private System.Windows.Forms.Button leczone;
+        private System.Windows.Forms.Label label_title;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.PictureBox pictureBox3;
     }
 }
 

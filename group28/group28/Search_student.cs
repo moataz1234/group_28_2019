@@ -34,11 +34,19 @@ namespace group28
 
         private void btn_search_lec_Click(object sender, EventArgs e)
         {
-            DataView dv = new DataView();
-            dv.Table = database23DataSet.Tables[6];
-            dv.RowFilter = "ID  = " + textB_id.Text;
-           // dv.RowFilter = "departmentName  = " + "software";
-            studentDataGridView.DataSource = dv;
+            string id = string.Format(textB_id.Text);
+
+            if (id == "") {
+                MessageBox.Show("You Must Insert an id Student!");
+            }
+            else
+            {
+                DataView dv = new DataView();
+                dv.Table = database23DataSet.Tables[6];
+                dv.RowFilter = "ID  = " + textB_id.Text;
+                // dv.RowFilter = "departmentName  = " + "software";
+                studentDataGridView.DataSource = dv;
+            }
         }
     }
 }

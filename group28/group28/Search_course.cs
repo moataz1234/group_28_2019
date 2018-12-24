@@ -34,10 +34,19 @@ namespace group28
 
         private void btn_search_crs_Click(object sender, EventArgs e)
         {
-            DataView dv = new DataView();
-            dv.Table = database23DataSet.Tables[0];
-            dv.RowFilter = "Number  = " + textB_id_crs.Text;
-            courseDataGridView.DataSource = dv;
+            string id = string.Format(textB_id_crs.Text);
+
+            if (id == "")
+            {
+                MessageBox.Show("You Must Insert a Number Course!");
+            }
+            else
+            {
+                DataView dv = new DataView();
+                dv.Table = database23DataSet.Tables[0];
+                dv.RowFilter = "Number  = " + textB_id_crs.Text;
+                courseDataGridView.DataSource = dv;
+            }
         }
     }
 }

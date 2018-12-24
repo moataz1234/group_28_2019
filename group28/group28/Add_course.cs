@@ -36,8 +36,16 @@ namespace group28
 
         private void add_corse_Click(object sender, EventArgs e)
         {
+
             string num = string.Format(textB_num.Text);
+            string name = string.Format(textB_name.Text);
+            string lec_id = string.Format(textB_lecid.Text);
+            string lec_name = string.Format(textB_lecname.Text);
+            string day = string.Format(textB_day.Text);
+            string hour= string.Format(textB_hour.Text);
+            string points = string.Format(textB_points.Text);
             int count = 0;
+            if (num == "" || name == "" || lec_id == "" || lec_name == "" || day == "" || hour == "" || points == "") { MessageBox.Show("you must enter all information about course"); }
             for (int rows = 0; rows < (courseDataGridView.Rows.Count) - 1; rows++)
             {
                 {
