@@ -33,9 +33,9 @@
             this.label3 = new System.Windows.Forms.Label();
             this.Login_button = new System.Windows.Forms.Button();
             this.username_text = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.password_text = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
             this.stuzone = new System.Windows.Forms.Button();
             this.manzone = new System.Windows.Forms.Button();
             this.leczone = new System.Windows.Forms.Button();
@@ -101,6 +101,16 @@
             this.username_text.Size = new System.Drawing.Size(227, 22);
             this.username_text.TabIndex = 9;
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(6, 164);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(46, 17);
+            this.label1.TabIndex = 14;
+            this.label1.Text = "label1";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
+            // 
             // password_text
             // 
             this.password_text.Location = new System.Drawing.Point(133, 74);
@@ -122,16 +132,6 @@
             this.label2.TabIndex = 10;
             this.label2.Text = "Username:";
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(6, 164);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(46, 17);
-            this.label1.TabIndex = 14;
-            this.label1.Text = "label1";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
-            // 
             // stuzone
             // 
             this.stuzone.BackColor = System.Drawing.Color.Ivory;
@@ -144,6 +144,7 @@
             this.stuzone.TabIndex = 17;
             this.stuzone.Text = "Student Zone";
             this.stuzone.UseVisualStyleBackColor = false;
+            this.stuzone.Click += new System.EventHandler(this.stuzone_Click);
             // 
             // manzone
             // 

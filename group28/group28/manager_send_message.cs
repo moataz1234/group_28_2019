@@ -25,21 +25,22 @@ Persist Security Info=False;";
         {
             try
             {
-                //OleDbConnection connection = new OleDbConnection(@"Provider=Microsoft.Jet.OLEDB.4.0;Data Source=C:\Users\mtzat\Desktop\Database23.mdb;
-                //Persist Security Info=False;");
                 connection.Open();
-                OleDbCommand command = new OleDbCommand
-                {
-                    Connection = connection,
-                    CommandText = "INSERT INTO [messages] (sender_id,reciever_id,Text) VALUES ('" + textB_byid.Text + "','" + textB_toid.Text + "','" + richTextB_text.Text + "')"
-                };
+                string byid = textB_byid.Text;
+                string toid = textB_toid.Text.ToString();
+                string text = richTextB_text.Text.ToString();
+                string query = "INSERT into messages([sender_id],[reciever_id],[Text])VALUES('" + byid + "','" + toid + "','" + text + "')";
+                OleDbCommand command = new OleDbCommand(query, connection);
                 command.ExecuteNonQuery();
                 MessageBox.Show("Data saved!");
-                connection.Close();
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Error " + ex);
+                MessageBox.Show("Error " + ex.Message);
+            }
+            finally
+            {
+                connection.Close();
             }
         }
 

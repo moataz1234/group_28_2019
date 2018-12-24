@@ -16,5 +16,11 @@ namespace group28
         {
             InitializeComponent();
         }
+
+        private void sch_stu_Click(object sender, EventArgs e)
+        {
+            schedule_student ss = new schedule_student();
+            ss.Show();
+        }
     }
 }

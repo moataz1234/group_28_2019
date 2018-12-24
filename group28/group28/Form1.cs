@@ -13,6 +13,7 @@ namespace group28
 {
     public partial class Form1 : Form
     {
+
         public OleDbConnection connection = new OleDbConnection();
 
         public Form1()
@@ -52,7 +53,7 @@ Persist Security Info=False;";
                 }
                 if (count == 1)
                 {
-                    this.Hide();
+                   // this.Hide();
                     stu.Show();
                 }
                 if (count > 1)
@@ -117,25 +118,37 @@ Persist Security Info=False;";
                 {
                     MessageBox.Show("Incorrect");
                 }
+
                 connection.Close();
-                //if (count == 1)
-                //{
-                //    try
-                //    {
-                //        connection.Open();
-                //        OleDbCommand cmd = new OleDbCommand();
-                //        cmd.Connection = connection;
-                //        cmd.CommandText = "select ID from student where sutdent.username=user";
-                //        cmd.ExecuteNonQuery();
-                //        MessageBox.Show("Data saved!");
-                //        connection.Close();
-                //    }
-                //    catch (Exception ex)
-                //    {
-                //        MessageBox.Show("Error " + ex);
-                //    }
-                //}
+
             }
+            else
+            {
+                MessageBox.Show("Incorrect");
+            }
+            //OleDbDataAdapter da = new OleDbDataAdapter("select ID from student", connection);
+            //DataTable dt = new DataTable();
+            //da.Fill(dt);
+            //dataGridView1.DataSource = dt;
+            //if (count == 1)
+            //{
+            //    try
+            //    {
+            //        connection.Open();
+            //        OleDbCommand cmd = new OleDbCommand();
+            //        cmd.Connection = connection;
+            //        cmd.CommandText = "select ID from student where sutdent.username=user";
+            //        cmd.ExecuteNonQuery();
+            //        MessageBox.Show("Data saved!");
+            //        connection.Close();
+            //    }
+            //    catch (Exception ex)
+            //    {
+            //        MessageBox.Show("Error " + ex);
+            //    }
+            //}
+            //get();
+
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -167,29 +180,35 @@ Persist Security Info=False;";
         {
             return id;
         }
-        //public DataSet GetDataSet(string SqlStr)
-        //{
-        //    try
-        //    {
-        //        OleDbCommand cmd = new OleDbCommand();
-        //        DataSet ds = new DataSet();
-        //        cmd.CommandText = SqlStr;
-        //        cmd.Connection = connection;
-        //        OleDbDataAdapter da = new OleDbDataAdapter(cmd);
-        //        da.Fill(ds);
-        //        dataGridView1.DataSource = ds;
-        //        return ds;
-        //    }
-        //    catch (Exception)
-        //    {
+        public void get()
+        {
+            try
+            {
+                //OleDbDataAdapter da = new OleDbDataAdapter("select ID from student where sutdent.username=user", connection);
+                //DataTable dt = new DataTable();
+                //da.Fill(dt);
+                //dataGridView1.DataSource = dt;
+                //string strring = string.Format("SELECT ID FROM student ");
+                //OleDbCommand cmd = new OleDbCommand();
+                //DataSet ds = new DataSet();
+                ////string str;
+                //cmd.CommandText = strring;
+                //cmd.Connection = connection;
+                //OleDbDataAdapter da = new OleDbDataAdapter(cmd);
+                //da.Fill(ds);
+                //dataGridView1.DataSource = ds;
+            }
+            catch (Exception)
+            {
 
-        //        throw;
-        //    }
-        //}
-        //public DataSet Getid()
-        //{
-        //    string str = string.Format("SELECT ID FROM student ");
-        //    return GetDataSet(str);
-        //}
+                throw;
+            }
+        }
+
+        private void stuzone_Click(object sender, EventArgs e)
+        {
+            StudentZone stdz = new StudentZone();
+            stdz.Show();
+        }
     }
 }
