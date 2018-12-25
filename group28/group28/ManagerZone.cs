@@ -66,5 +66,11 @@ namespace group28
             manager_send_message mmn = new manager_send_message();
             mmn.Show();
         }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            View_Messages vm = new View_Messages();
+            vm.Show();
+        }
     }
 }

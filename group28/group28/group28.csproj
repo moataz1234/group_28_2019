@@ -131,6 +131,12 @@
     <Compile Include="update2.Designer.cs">
       <DependentUpon>update2.cs</DependentUpon>
     </Compile>
+    <Compile Include="View_Messages.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View_Messages.Designer.cs">
+      <DependentUpon>View_Messages.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Add_course.resx">
       <DependentUpon>Add_course.cs</DependentUpon>
     </EmbeddedResource>
@@ -178,6 +184,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="update2.resx">
       <DependentUpon>update2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View_Messages.resx">
+      <DependentUpon>View_Messages.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Database23DataSet.xsc">
       <DependentUpon>Database23DataSet.xsd</DependentUpon>

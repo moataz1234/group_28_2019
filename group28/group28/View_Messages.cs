@@ -12,32 +12,29 @@ using static group28.Form1;
 
 namespace group28
 {
-    public partial class schedule_student : Form
+    public partial class View_Messages : Form
     {
         private OleDbConnection connection = new OleDbConnection();
         private OleDbDataAdapter sda;
-        //private OleDbCommandBuilder scb;
         DataTable dt;
-
-        public schedule_student()
+        public View_Messages()
         {
             InitializeComponent();
             connection.ConnectionString = @"Provider=Microsoft.Jet.OLEDB.4.0;Data Source=C:\Users\mtzat\Desktop\Database23.mdb;
 Persist Security Info=False;";
         }
 
+        private void View_Messages_Load(object sender, EventArgs e)
+        {
+
+        }
+
         private void button1_Click(object sender, EventArgs e)
         {
-            textBox1.Text = LoginInfo.userid;
-            sda = new OleDbDataAdapter("SELECT Name,day,Hour,lec_id FROM Course,student,student_course WHERE student_course.StudentID ='" + LoginInfo.userid + "' AND Course.Number=student_course.Course_Number", connection);
+            sda = new OleDbDataAdapter("SELECT sender_id,reciever_id,Text FROM messages WHERE messages.sender_id ='" + LoginInfo.userid + "' OR messages.reciever_id ='" + LoginInfo.userid + "'", connection);
             dt = new DataTable();
             sda.Fill(dt);
             dataGridView1.DataSource = dt;
-        }
-
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-
         }
     }
 }

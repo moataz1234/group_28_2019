@@ -27,7 +27,10 @@ Persist Security Info=False;";
         {
 
         }
-
+        public static class LoginInfo
+        {
+            public static string userid;
+        }
         private void Login_button_Click(object sender, EventArgs e)
         {
             ManagerZone man = new ManagerZone();
@@ -35,10 +38,10 @@ Persist Security Info=False;";
             LecturerZone lec = new LecturerZone();
             string user = string.Format(username_text.Text);
             string pass = string.Format(password_text.Text);
+            //string iduser;
             if (user == "" || pass == "") {
                 MessageBox.Show("you must enter username and pass to login");
             }
-            //string id = string.Format("select ID from student,lecturer,Manager where ");
             else if (user[0] == 's')
             {
                 connection.Open();
@@ -49,12 +52,13 @@ Persist Security Info=False;";
                 int count = 0;
                 while (reader.Read())
                 {
+                    LoginInfo.userid = reader["ID"].ToString();
                     count++;
                 }
                 if (count == 1)
                 {
-                   // this.Hide();
-                    stu.Show();
+                   Hide();
+                   stu.Show();
                 }
                 if (count > 1)
                 {
@@ -76,11 +80,12 @@ Persist Security Info=False;";
                 int count = 0;
                 while (reader.Read())
                 {
+                    LoginInfo.userid = reader["ID"].ToString();
                     count++;
                 }
                 if (count == 1)
                 {
-                    this.Hide();
+                    Hide();
                     man.Show();
                 }
                 if (count > 1)
@@ -103,11 +108,12 @@ Persist Security Info=False;";
                 int count = 0;
                 while (reader.Read())
                 {
+                    LoginInfo.userid = reader["ID"].ToString();
                     count++;
                 }
                 if (count == 1)
                 {
-                    this.Hide();
+                   Hide();
                     lec.Show();
                 }
                 if (count > 1)
@@ -126,29 +132,6 @@ Persist Security Info=False;";
             {
                 MessageBox.Show("Incorrect");
             }
-            //OleDbDataAdapter da = new OleDbDataAdapter("select ID from student", connection);
-            //DataTable dt = new DataTable();
-            //da.Fill(dt);
-            //dataGridView1.DataSource = dt;
-            //if (count == 1)
-            //{
-            //    try
-            //    {
-            //        connection.Open();
-            //        OleDbCommand cmd = new OleDbCommand();
-            //        cmd.Connection = connection;
-            //        cmd.CommandText = "select ID from student where sutdent.username=user";
-            //        cmd.ExecuteNonQuery();
-            //        MessageBox.Show("Data saved!");
-            //        connection.Close();
-            //    }
-            //    catch (Exception ex)
-            //    {
-            //        MessageBox.Show("Error " + ex);
-            //    }
-            //}
-            //get();
-
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -164,7 +147,10 @@ Persist Security Info=False;";
                 MessageBox.Show("Error" + ex);
             }
         }
-
+        //public static class LoginInfo
+        //{
+        //    public static string userid;
+        //}
         private void manzone_Click(object sender, EventArgs e)
         {
             ManagerZone mann = new ManagerZone();
@@ -175,34 +161,6 @@ Persist Security Info=False;";
         {
             LecturerZone lecc = new LecturerZone();
             lecc.Show();
-        }
-        public string Get_id(string id)
-        {
-            return id;
-        }
-        public void get()
-        {
-            try
-            {
-                //OleDbDataAdapter da = new OleDbDataAdapter("select ID from student where sutdent.username=user", connection);
-                //DataTable dt = new DataTable();
-                //da.Fill(dt);
-                //dataGridView1.DataSource = dt;
-                //string strring = string.Format("SELECT ID FROM student ");
-                //OleDbCommand cmd = new OleDbCommand();
-                //DataSet ds = new DataSet();
-                ////string str;
-                //cmd.CommandText = strring;
-                //cmd.Connection = connection;
-                //OleDbDataAdapter da = new OleDbDataAdapter(cmd);
-                //da.Fill(ds);
-                //dataGridView1.DataSource = ds;
-            }
-            catch (Exception)
-            {
-
-                throw;
-            }
         }
 
         private void stuzone_Click(object sender, EventArgs e)
