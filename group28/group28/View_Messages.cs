@@ -20,7 +20,7 @@ namespace group28
         public View_Messages()
         {
             InitializeComponent();
-            connection.ConnectionString = @"Provider=Microsoft.Jet.OLEDB.4.0;Data Source=C:\Users\mtzat\Desktop\Database23.mdb;
+            connection.ConnectionString = @"Provider=Microsoft.Jet.OLEDB.4.0;Data Source=|DataDirectory|\\Database23.mdb;
 Persist Security Info=False;";
         }
 
